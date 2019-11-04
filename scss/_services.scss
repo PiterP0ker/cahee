@@ -1,0 +1,61 @@
+.ba-services-title {
+	background: url(../img/tomato.png) no-repeat 50%;
+	background-size: contain;
+	padding: 50px 0;
+	margin-bottom: 20px;
+
+	@media screen and (min-width:$large){
+		min-width: 462px;
+		min-height: 527px;
+		display: flex;
+		align-items: center;
+		margin-top: -77px;
+		background-position: right center;
+		justify-content: flex-end;
+	}
+
+}
+
+.ba-services-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	@media screen and (min-width:$medium){
+		padding: 0 70px;
+	}
+	@media screen and (min-width:$large){
+		padding: 0 70px 0 100px;
+	}
+}
+
+.ba-services-item {
+	background-color: #fff;
+	box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.5);
+	color: $text-color;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+
+
+	& + & {
+		margin-top: 20px;
+	}
+
+	&__icon {
+		width: 100px;
+		height: 100px;
+		border-left: 1px solid #ADADAD;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	&__title {
+		flex-grow: 1;
+		text-align: center;
+		padding: 5px 15px;
+		font-size: 20px;
+	}
+}
