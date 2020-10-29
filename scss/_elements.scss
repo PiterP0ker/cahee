@@ -14,7 +14,7 @@ button,
 
 	min-height: 55px;
 	line-height: 55px;
-	background: $primary-color;
+	background: #EDD447;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 20px;
@@ -23,7 +23,7 @@ button,
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
 
 	&:hover{
-		background-color: darken($primary-color, 15%);
+		background-color: darken(#EDD447, 15%);
 		color: #fff;
 	}
 }
@@ -61,6 +61,49 @@ button,
 	}
 
 
+}
+
+.ba-header-contacts {
+  display: flex;
+
+  a {
+    height: 32px;
+    width: 32px;
+  }
+
+  &__telegram svg circle,
+  &__viber svg circle,
+  &__viber svg path,
+  &__whatsup svg .green-color,{
+    transition: all linear 0.3s;
+  }
+
+  &__telegram:hover svg circle {
+    fill: lighten(#039be5, 15%);
+  }
+  &__viber svg path {
+    fill:#512D84;
+  }
+
+  &__viber svg circle {
+    fill:#6F3FAA;
+  }
+  &__whatsup:hover svg .green-color {
+    fill: lighten(#64b161, 15%);
+  }
+
+  &__viber:hover svg circle,
+  &__viber:hover svg path {
+    fill: lighten(#6F3FAA, 15%);
+  }
+
+  a + a {
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 791px){
+    margin-left: 20px;
+  }
 }
 
 input[type="text"],
